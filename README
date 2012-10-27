@@ -1,0 +1,59 @@
+                                     |---------------------.
+                                     | David L. F. Gaden's |
+                    .----------------|---------------------'
+                    |  multiSolver   |  Version:    0.5.1
+                    '----------------|
+
+Description
+===========
+An extension to OpenFOAM that allows you to run multiple solvers in sequence on
+the same dataset.
+
+Original Author
+===============
+David L. F. Gaden (davegaden@hotmail.com)
+
+Current Maintainer
+==================
+David L. F. Gaden (davegaden@hotmail.com)
+
+Contributors
+============
+David L. F. Gaden : base version
+
+Documentation
+=============
+Coming soon.
+
+Installation/Compilation
+========================
+
+To install multiSolver, refer to the instructions on the wiki, as they are most
+up to date.
+
+Contents
+========
+
+ - src - the library source files
+ - applications - a demo application that uses multiSolver
+ - tutorials - a sample case that runs the demo application
+
+Required OpenFOAM-Version (Known to work with)
+==============================================
+1.6-ext
+2.1.x
+
+History
+=======
+
+ 2010-07-23: Initial import
+ 2011-03-29: Minor bug fix for 1.6-ext and 1.7.1
+ 2011-04-05:
+    Major upgrade
+        * Now works for parallel simulations
+ 2011-06-03:
+    Minor bug fix:
+        * Parallel decomposing no longer omits the initial directory
+ 2012-10-25:
+    Moved to git
+    Enabled boundary switching

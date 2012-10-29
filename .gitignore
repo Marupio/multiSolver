@@ -80,6 +80,12 @@ doc/[Dd]oxygen/man
 *.results/
 *.results
 
+# ignore generated meshes
+faces
+neighbour
+owner
+points
+
 # general exclusion
 *.noGit/
 *.noGit

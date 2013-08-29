@@ -687,7 +687,7 @@ bool Foam::multiSolver::loadTimeClusterList
         if
         (
             loadStoreFields
-         && currentSolverDomainDict_.found("storeField")
+         && currentSolverDomainDict_.found("storeFields")
         )
         {
             storeFields = wordList(currentSolverDomainDict_.lookup("storeFields"));

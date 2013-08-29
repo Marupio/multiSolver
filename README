@@ -1,7 +1,7 @@
                  |---------------------.
                  | David L. F. Gaden's |
 .----------------|---------------------'
-|  multiSolver   |  Version:    0.5.1
+|  multiSolver   |  Version:    0.6.0
 '----------------|
                  |  If you use, please cite:
                  V
@@ -29,25 +29,27 @@ David L. F. Gaden : base version
 
 Documentation
 =============
-Coming soon.
+github.com/Marupio/multiSolver/wiki
 
 Installation/Compilation
 ========================
 
-To install multiSolver, refer to the instructions on the wiki, as they are most
-up to date.
+See documentation.
 
 Contents
 ========
 
  - src - the library source files
- - applications - a demo application that uses multiSolver
+ - applications\solvers - a demo application that uses multiSolver
+ - applications\utilities - a data handling utility
  - tutorials - a sample case that runs the demo application
 
 Required OpenFOAM-Version (Known to work with)
 ==============================================
 1.6-ext
+2.0.x
 2.1.x
+2.2.x
 
 History
 =======
@@ -55,11 +57,17 @@ History
  2010-07-23: Initial import
  2011-03-29: Minor bug fix for 1.6-ext and 1.7.1
  2011-04-05:
-    Major upgrade
+    * Major upgrade
         * Now works for parallel simulations
- 2011-06-03:
-    Minor bug fix:
+ 2011-06-03: 
+    * Minor bug fix:
         * Parallel decomposing no longer omits the initial directory
- 2012-10-25:
-    Moved to git
-    Enabled boundary switching
+ 2011-07-01: Overhauled documentation; no change to code
+ 2012-10-25: Version 0.5.0
+    * Moved to git
+    * Enabled boundary switching
+    * Introduced version numbers to keep track of changes
+ 2013-08-29: Version 0.6.0
+    * Uploaded to github and OpenFOAM-extend
+    * Restructured applications and tutorials directories for consistency
+    * Made opening splash optional

@@ -1115,7 +1115,8 @@ Foam::multiSolver::multiSolver
     const fileName& rootPath,
     const fileName& caseName,
     const word& systemName,
-    const word& constantName
+    const word& constantName,
+    bool showSplash
 )
 :
     dcd_(dict),
@@ -1144,16 +1145,20 @@ Foam::multiSolver::multiSolver
     ),
 #include "multiSolverInit.H"
 {
-    Info
-        << "/*                       |---------------------." << token::NL
-        << " * This application uses | David L. F. Gaden's |  "
-        << "Please cite me if possible" << token::NL
-        << " *      .----------------|---------------------'  "
-        << "See the README for more info" << token::NL
-        << " *      |   multiSolver  |  Version:    " << version()
-        << token::NL
-        << " *      '----------------|" << token::NL
-        << " */" << endl;
+    if (showSplash)
+    {
+        Info
+            << "/*                       |---------------------." << token::NL
+            << " * This application uses | David L. F. Gaden's |  "
+            << "Please cite me if possible" << token::NL
+            << " *      .----------------|---------------------'  "
+            << "See the wiki for more info" << token::NL
+            << " *      |   multiSolver  |  Version:    " << version()
+            << token::NL
+            << " *      '----------------|       "
+            << "github.com/Marupio/multiSolver/wiki" << token::NL
+            << " */" << endl;
+    }
     if (Pstream::parRun())
     {
         setUpParallel();
@@ -1170,7 +1175,8 @@ Foam::multiSolver::multiSolver
     const fileName& rootPath,
     const fileName& caseName,
     const word& systemName,
-    const word& constantName
+    const word& constantName,
+    bool showSplash
 )
 :
     dcd_(rootPath/caseName/systemName/multiControlDictName),
@@ -1198,16 +1204,20 @@ Foam::multiSolver::multiSolver
     ),
 #include "multiSolverInit.H"
 {
-    Info
-        << "/*                       |---------------------." << token::NL
-        << " * This application uses | David L. F. Gaden's |  "
-        << "Please cite me if possible" << token::NL
-        << " *      .----------------|---------------------'  "
-        << "See the README for more info" << token::NL
-        << " *      |   multiSolver  |  Version:    " << version()
-        << token::NL
-        << " *      '----------------|" << token::NL
-        << " */" << endl;
+    if (showSplash)
+    {
+        Info
+            << "/*                       |---------------------." << token::NL
+            << " * This application uses | David L. F. Gaden's |  "
+            << "Please cite me if possible" << token::NL
+            << " *      .----------------|---------------------'  "
+            << "See the wiki for more info" << token::NL
+            << " *      |   multiSolver  |  Version:    " << version()
+            << token::NL
+            << " *      '----------------|       "
+            << "github.com/Marupio/multiSolver/wiki" << token::NL
+            << " */" << endl;
+    }
     if (Pstream::parRun())
     {
         setUpParallel();

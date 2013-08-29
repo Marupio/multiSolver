@@ -334,7 +334,8 @@ public:
             const fileName& rootPath,
             const fileName& caseName,
             const word& systemName = "system",
-            const word& constantName = "constant"
+            const word& constantName = "constant",
+            bool showSplash = true
         );
 
         //- Construct reading the multiControlDict from file
@@ -344,7 +345,8 @@ public:
             const fileName& rootPath,
             const fileName& caseName,
             const word& systemName = "system",
-            const word& constantName = "constant"
+            const word& constantName = "constant",
+            bool showSplash = true
         );
 
 

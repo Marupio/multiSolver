@@ -1149,14 +1149,14 @@ Foam::multiSolver::multiSolver
     {
         Info
             << "/*                       |---------------------." << token::NL
-            << " * This application uses | David L. F. Gaden's |  "
-            << "Please cite me if possible" << token::NL
-            << " *      .----------------|---------------------'  "
-            << "See the wiki for more info" << token::NL
+            << " * This application uses | David L. F. Gaden's |" << token::NL
+            << " *      .----------------|---------------------'" << token::NL
             << " *      |   multiSolver  |  Version:    " << version()
             << token::NL
             << " *      '----------------|       "
             << "github.com/Marupio/multiSolver/wiki" << token::NL
+            << " *                       V" << token::NL
+            << " *      Please cite: dx.doi.org/10.5203/sc_gad_1" << token::NL
             << " */" << endl;
     }
     if (Pstream::parRun())

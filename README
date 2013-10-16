@@ -1,14 +1,10 @@
-                 |---------------------.
-                 | David L. F. Gaden's |
-.----------------|---------------------'
-|  multiSolver   |  Version:    0.6.0
-'----------------|
-                 |  If you use, please cite:
-                 V
-* D. L. F. Gaden, and E. L. Bibeau (2012), "A programmable logic controller
-  emulator with automatic algorithm-switching for computational fluid dynamics
-  using OpenFOAM," Proceedings of the 2012 CSME International Congress, Paper
-  number 156959763, June 4-6, Winnipeg, MB.
+                         |---------------------.
+                         | David L. F. Gaden's |
+        .----------------|---------------------'
+        |  multiSolver   |  Version:    0.6.1
+        '----------------|  Wiki:       github.com/Marupio/multiSolver/wiki
+                         V
+        Please cite: dx.doi.org/10.5203/sc_gad_1
 
 Description
 ===========
@@ -18,6 +14,7 @@ the same dataset.
 Original Author
 ===============
 David L. F. Gaden (dlfgaden@gmail.com)
+With supervision by Dr. Eric L. Bibeau (Eric.Bibeau@ad.umanitoba.ca)
 
 Current Maintainer
 ==================
@@ -51,6 +48,13 @@ Required OpenFOAM-Version (Known to work with)
 2.1.x
 2.2.x
 
+See also
+========
+* D. L. F. Gaden, and E. L. Bibeau (2012), "A programmable logic controller
+  emulator with automatic algorithm-switching for computational fluid dynamics
+  using OpenFOAM," Proceedings of the 2012 CSME International Congress, Paper
+  number 156959763, June 4-6, Winnipeg, MB.
+
 History
 =======
 
@@ -71,3 +75,5 @@ History
     * Uploaded to github and OpenFOAM-extend
     * Restructured applications and tutorials directories for consistency
     * Made opening splash optional
+ 2013-10-16: Version 0.6.1
+    * Added DOI citation detail
